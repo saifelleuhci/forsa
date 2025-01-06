@@ -1,0 +1,241 @@
+/* Existing CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #006EB2;
+    --s1: 1.7rem;
+    --s2: 1.2rem;
+    --s3: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main_container {
+    width: 100%;
+    padding: 0 15%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.main_container img {
+    padding-bottom: 20px;
+}
+
+.header_text h3 {
+    padding-top: 15px;
+}
+
+.header_text_main {
+    background: var(--blue);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 0;
+}
+
+.sucsess {
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: var(--blue);
+    padding-top: 30px;
+}
+
+.sucsess h1 {
+    padding-bottom: 20px;
+}
+
+.img_desktop img {
+    max-width: 400px;
+}
+
+.img_mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .img_desktop img {
+        display: none;
+    }
+
+    .img_mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_mobile img {
+        padding-top: 30px;
+        width: 300px;
+    }
+}
+
+.middle_page_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 90px;
+    padding-top: 30px;
+}
+
+.middle_page_text h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.middle_page_text h3 {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .middle_page_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 30px;
+        padding-top: 80px;
+    }
+}
+
+.inout_box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 60%;
+}
+
+.inout_box input {
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 20px;
+}
+
+.inout_box textarea {
+    height: 10rem;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 20px;
+}
+
+.inout_box label {
+    font-weight: 1000;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+/* Form button styles */
+button {
+    cursor: pointer;
+    width: 80px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect for form button */
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Active effect for form button (when clicked) */
+button:active {
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+form {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h_a {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20%;
+    height: 300px;
+    margin-bottom: 200px;
+}
+
+.h_a h1 {
+    padding-bottom: 20px;
+}
+
+#q1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.logo {
+    transition: transform 0.2s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#q2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.respose {
+    display: none;
+    margin-top: 20px;
+    padding: 30px;
+    background: red;
+    border-radius: 25px;
+    width: 60%;
+    text-align: center;
+    color: white;
+}
